@@ -1,4 +1,4 @@
-##Download the binary
+## Download the binary
 ```
 cd /tmp
 ```
