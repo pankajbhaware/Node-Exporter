@@ -5,12 +5,15 @@ cd /tmp
 wget https://github.com/prometheus/node_exporter/releases/download/v1.0.1/node_exporter-1.0.1.linux-amd64.tar.gz
 ```
 ## Extract the downloaded package. 
+tar -xvf node_exporter-1.0.1.linux-amd64.tar.gz
 ```
- tar -xvf node_exporter-1.0.1.linux-amd64.tar.gz
- cd node_exporter-1.0.1.linux-amd64
- sudo mv node_exporter-1.0.1.linux-amd64/node_exporter /usr/local/bin/
- sudo useradd -rs /bin/false node_exporter
- sudo vi /etc/systemd/system/node_exporter.service
+cd node_exporter-1.0.1.linux-amd64
+```
+sudo mv node_exporter-1.0.1.linux-amd64/node_exporter /usr/local/bin/
+```
+sudo useradd -rs /bin/false node_exporter
+```
+sudo vi /etc/systemd/system/node_exporter.service
 ```
 ## Add this configuration in node_exporter.service
 ```   
